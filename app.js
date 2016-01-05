@@ -1,6 +1,6 @@
 var sensors = require('./lib/sensors.js');
 var actuators = require('./lib/actuators.js');
-var LedDriver = require('./led-driver.js');
+var LedDriver = require('./lib/led-driver.js');
 var System = require('./lib/system.js');
 
 var pirSensor = new sensors.FakePIR(1000);
