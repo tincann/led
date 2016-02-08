@@ -3,8 +3,7 @@ var actuators = require('./lib/actuators.js');
 var LedDriver = require('./lib/led-driver.js');
 var System = require('./lib/system.js');
 
-var pirSensor = new sensors.FakePIR(1000);
-
+var pirSensor = new sensors.PIR(26);
 
 
 var led = new actuators.LED(1);
