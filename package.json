@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "dependencies": {
+    "rpi-gpio": "^0.7.0",
     "rpi-ws281x-native": "^0.8.1"
   },
   "devDependencies": {},
