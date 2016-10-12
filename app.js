@@ -12,10 +12,12 @@ var pirSensor = new sensors.PIR(26);
 var led = new actuators.LED(1);
 var driver = new LedDriver(led);
 
+Date.prototype.setTimezone = function(){};
+
 //logging
 const logger = require('./lib/logger.js');
 var tg = new Telegram(process.env.BOT_TOKEN, process.env.CHAT_ID);
-logger.addListener(tg.log, true);
+logger.addListener(tg.log.bind(tg), true);
 
 var system = new System(pirSensor, driver);
 
